@@ -6,15 +6,16 @@
 import { useState } from "react";
 
 export function Weather() {
-  const [temp, setTemp] = useState("");
+  const [temp, setTemp] = useState<number | "">("");
 
-  function changeHandler(event){
-    setTemp(event.target.value);
+  function changeHandler(e:React.ChangeEvent<HTMLInputElement>){
+    const value= e.target.value;
+    setTemp(value ==""? "" : Number(value));
   } 
 
   return (
     <>
-    <br></br>
+      <br></br>
       <input 
         type="number"
         placeholder="enter temperature"
@@ -22,7 +23,7 @@ export function Weather() {
         onChange={changeHandler}
       />
 
-      {temp !== undefined && (
+      {temp !== "" && (
         <div>
           {temp < 10 ? (
             <h2>It's cold today!</h2>
