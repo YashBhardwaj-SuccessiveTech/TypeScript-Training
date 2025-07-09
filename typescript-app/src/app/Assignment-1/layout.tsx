@@ -1,7 +1,12 @@
+import { ReactNode } from "react";
 import "../globals.css";
 import Link from "next/link";
 
-export default function Assignment1Layout({ children }) {
+type Props = {
+  children: ReactNode;
+}
+
+export default function Assignment1Layout({ children }: Props) {
   return (
   
         <div className="ass-1layout">

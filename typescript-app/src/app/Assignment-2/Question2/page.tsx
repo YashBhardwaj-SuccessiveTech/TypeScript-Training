@@ -5,11 +5,12 @@
 // Display the entered information below the input fields.
 
 import React from 'react'
+import PersonForm from '../../Components/Assignment2Components/PersonForm'
 
 const page = () => {
   return (
     <div>
-        
+        <PersonForm/>
     </div>
   )
 }

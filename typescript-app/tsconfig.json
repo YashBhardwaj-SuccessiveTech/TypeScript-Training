@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/Components/Assignment1Components/Weather.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/Components/Assignment1Components/Weather.tsx", "src/app/layout.tsx", "Context/CartContext.jsx"],
   "exclude": ["node_modules"]
 }
